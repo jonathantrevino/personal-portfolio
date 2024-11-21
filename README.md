@@ -6,7 +6,7 @@ I'm Jonathan Trevino (often called JT), a software engineer in web development. 
 
 I really like the ability to create a personal website like this developer portfolio and have had many portfolios that I've built in the past, always making sure the next is more refined.
 
-If you need help with your portfolio, don't feel shy to ask, will help any way that I can!
+*If you need help with your portfolio, don't feel shy to ask, will help any way that I can!*
 
 ## Projects
 
