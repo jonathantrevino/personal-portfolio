@@ -1,5 +1,7 @@
 Portfolio built with Next.js, Typescript, Tailwind, and Framer Motion
 
+![Website OG Image](public/images/opengraph-image.png)
+
 # Introduction
 
 I'm Jonathan Trevino (often called JT), a software engineer in web development. Currently building [https://www.webportfolios.dev](https://www.webportfolios.dev).
