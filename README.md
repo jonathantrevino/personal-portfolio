@@ -1,7 +1,6 @@
 Portfolio built with Next.js, Typescript, Tailwind, and Framer Motion
 
 # Introduction
----
 
 I'm Jonathan Trevino (often called JT), a software engineer in web development. Currently building [https://www.webportfolios.dev](https://www.webportfolios.dev).
 
@@ -10,7 +9,6 @@ I really like the ability to create a personal website like this developer portf
 If you need help with your portfolio, don't feel shy to ask, will help any way that I can!
 
 ## Projects
---- 
 
 ### [webportfolios.dev](https://www.webportfolios.dev)
 
@@ -24,7 +22,6 @@ Is a platform I built to let developers upload their portfolios from their portf
 - Dynamic SEO optimization for better reach to developers looking for specific portfolio requirements
 
 ## Education
----
 Bachelor in Computer Science with a minor in Cyber Security
 
 AWS Certified Cloud Practitioner 
