@@ -18,7 +18,7 @@ export const About = () => {
         </div>
         <div className='max-w-[565px] space-y-[13px] leading-relaxed'>
           <p>I am a developer at my core who focuses on building impactful products that solve real problems.</p>
-          <p>When I’m not coding you will often find me re-arranging my room, contemplating buying another keyboard, or building another Gundam (currently at Perfect Grade).</p>
+          <p>When I’m not coding you will often find me re-arranging my room, contemplating buying another keyboard, or building another Gundam (currently at Master Grade).</p>
           <p>At the moment I am working on growing webpotfolios.dev, a directory for developer portfolios and sharing the journey on X (Twitter?). My goal is try to help as many developers as I can.</p>
         </div>
       </div>
