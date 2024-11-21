@@ -17,10 +17,8 @@ const Page: React.FC<{ params: { slug: string } }> = ({ params }) => {
   const project = projects.find((project) => project.slug === slug)
 
   if (!slug || !project) {
-
-    return <div>Project Not Found</div>
+    return <div className=''><Spacer /><div className='flex justify-center items-center'><div><h1>Project Not Found</h1><div className='text-center font-light'>Return back <Link href='/' className='link underline font-normal'>home</Link></div></div></div><Spacer /><Spacer /><Spacer /></div>
   }
-  console.log(slug)
   return (
     <div>
       <Spacer />
