@@ -5,7 +5,15 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ExternalLink } from 'lucide-react'
 
-export async function generateStaticParams() {
+// or Dynamic metadata
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  const project = projects.find((project) => project.slug === params.slug)
+
+  return {
+    title: `Jonathan Trevino ${project ? '- ' + project.slug : '- 404'}`,
+  }
+
+} export async function generateStaticParams() {
   return projects.map((item) => ({
     slug: item.slug,
   }))
