@@ -47,11 +47,11 @@ const Page: React.FC<{ params: { slug: string } }> = ({ params }) => {
           </div>
           <div className='space-y-3'>
             <h3 className='text-xl'>Features</h3>
-            <ul className='leading-relaxed space-y-2 list-disc ml-4'>{project.features.map((feature) => <li>{feature}</li>)}</ul>
+            <ul className='leading-relaxed space-y-2 list-disc ml-4'>{project.features.map((feature) => <li key={feature}>{feature}</li>)}</ul>
           </div>
           <div className='space-y-3'>
             <h3 className='text-xl'>Challenges</h3>
-            <ul className='leading-relaxed space-y-2 list-disc ml-4'>{project.obstacles.map((obstacle) => <li>{obstacle}</li>)}</ul>
+            <ul className='leading-relaxed space-y-2 list-disc ml-4'>{project.obstacles.map((obstacle) => <li key={obstacle}>{obstacle}</li>)}</ul>
           </div>
           <div className='space-y-3'>
             <h3 className='text-xl'>Results</h3>
