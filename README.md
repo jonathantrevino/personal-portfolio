@@ -1,6 +1,6 @@
 Portfolio built with Next.js, Typescript, Tailwind, and Framer Motion
 
-![Website OG Image](public/images/opengraph-image.png)
+![Website OG Image](/public/opengraph-image.png)
 
 # Introduction
 
