@@ -29,16 +29,18 @@
   --white: #2B3440;
 
 
-  --background-color: #1A202C;
-  /* A dark grayish blue */
+  --background-color: #121212;
+  /* Dark black background */
   --text-color: #E2E8F0;
-  /* A light grayish white for good contrast */
+  /* Light grayish white for good contrast */
   --not-important: #A0AEC0;
-  /* A muted light gray for less emphasis */
-  --container-color: #2D3748;
-  /* A slightly lighter dark gray for containers */
-  --skill-card: #252e3c;
-  --cta: #007BFF;
+  /* Muted light gray for less emphasis */
+  --container-color: #1F1F1F;
+  /* A slightly lighter black/gray for containers */
+  --skill-card: #2A2A2A;
+  /* Darker gray/black for skill cards */
+  --cta: #1D72B8;
+  /* A blue accent for CTA, but still dark enough */
 }
 
 .not-important {
