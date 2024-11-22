@@ -45,7 +45,7 @@ const Page: React.FC<{ params: { slug: string } }> = ({ params }) => {
             </Link>}</span>
 
           </div>
-          <div className='flex gap-3 flex-wrap'>{project.skills && project.skills.map((skill) => <div className='skill-card px-2 py-1 rounded-md'>{skill}</div>)}</div>
+          <div className='flex gap-3 flex-wrap'>{project.skills && project.skills.map((skill) => <div key={skill} className='skill-card px-2 py-1 rounded-md'>{skill}</div>)}</div>
         </section>
         <Image className='w-full border border-gray-200' src={project.image_url} width={669} height={476} alt='webportfolios project preview' />
         <section className='space-y-5'>
