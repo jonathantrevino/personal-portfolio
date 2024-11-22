@@ -28,11 +28,11 @@ export const LocationTime = () => {
 
   return (
     <div className='flex gap-5'>
-      <div className="flex gap-2 text-[color:#2B3440] items-center">
+      <div className="flex gap-2  items-center">
         <MapPin />
         Edinburg, Texas
       </div>
-      <div className="flex gap-2 text-[color:#2B3440] items-center">
+      <div className="flex gap-2  items-center">
         <Clock3 />
         <p>{time}</p>
       </div>

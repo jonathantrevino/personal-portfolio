@@ -33,11 +33,11 @@ export const ProjectCard = ({ title, description, image_url, skills, live, users
       animate={isClicked ? 'clicked' : ''}
       transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
       onClick={handleClick}
-      className='md:aspect-video bg-gray-100/60 border-b-2 border-gray-100/60 p-[30px] rounded-md relative project-card overflow-hidden transition-all space-y-5'
+      className='md:aspect-video p-[30px] rounded-md relative project-card overflow-hidden transition-all space-y-5'
     >
       <div className='flex justify-between overflow-visible'>
         <span>
-          <span className='text-gray-500 text-sm'>{users}+ Users</span>
+          <span className='text-gray-500 text-sm not-important'>{users}+ Users</span>
           <h3 className='font-bold text-[23px]'>{title}</h3>
           <p className=''>{description}</p>
         </span>
@@ -50,7 +50,7 @@ export const ProjectCard = ({ title, description, image_url, skills, live, users
           </Link>}</span>
       </div>
       <div className='flex justify-between md:flex-row flex-col gap-5 flex-wrap'>
-        <div className='flex gap-3 flex-wrap'>{skills && skills.map((skill) => <div className='bg-gray-200 px-2 py-1 rounded-md'>{skill}</div>)}</div>
+        <div className='flex gap-3 flex-wrap'>{skills && skills.map((skill) => <div className='skill-card px-2 py-1 rounded-md'>{skill}</div>)}</div>
         <Link className='flex gap-2 self-end group' href={`/projects/${slug}`}>Read More<MoveRight className='group-hover:translate-x-1 transition-all' /></Link>
       </div>
       <div className='justify-center items-end md:flex hidden'>

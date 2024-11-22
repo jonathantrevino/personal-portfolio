@@ -2,22 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Colors */
+* {
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Colors Default Light Theme */
 :root {
   --green: #7ac142;
   --white: #fff;
 
   /* Misc */
   --curve: cubic-bezier(0.650, 0.000, 0.450, 1.000);
+
+  --background-color: white;
+  --text-color: #2B3440;
+  --not-important: #878C98;
+  --container-color: #F8F8FA;
+  --skill-card: #E5E7EB;
+  --cta: #4902FF;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {}
+/* Dark Theme */
+
+[data-theme='dark'] {
+  --green: #fff;
+  --white: #2B3440;
+
+
+  --background-color: #1A202C;
+  /* A dark grayish blue */
+  --text-color: #E2E8F0;
+  /* A light grayish white for good contrast */
+  --not-important: #A0AEC0;
+  /* A muted light gray for less emphasis */
+  --container-color: #2D3748;
+  /* A slightly lighter dark gray for containers */
+  --skill-card: #252e3c;
+  --cta: #007BFF;
+}
+
+.not-important {
+  color: var(--not-important);
+
+}
+
+.skill-card {
+  background-color: var(--skill-card);
 }
 
 body {
-  color: #2B3440;
-  background: var(--background);
+  color: var(--text-color);
+  background: var(--background-color);
 }
 
 h1 {
@@ -35,7 +70,7 @@ h1.title {
 
 h2 {
   font-size: 23px;
-  color: #2B3440;
+  color: var(--text-color);
 }
 
 h2.title {
@@ -43,9 +78,15 @@ h2.title {
   font-size: 23px;
 }
 
+div.project-card {
+  background-color: var(--container-color);
+  border-bottom-width: 2px;
+  border-bottom-color: var(--container-color)
+}
+
 h2.description {
   font-size: 19px;
-  color: #2B3440;
+  color: var(--text-color);
 
 }
 

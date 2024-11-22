@@ -9,8 +9,8 @@ export const About = () => {
         <div>
           <span className='flex gap-2 items-center'>
             <svg width="49" height="24" viewBox="0 0 49 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M36.75 8L44.9167 12L36.75 16" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M4.08333 12H44.9167" stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M36.75 8L44.9167 12L36.75 16" stroke="var(--text-color)" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M4.08333 12H44.9167" stroke="var(--text-color)" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <h3 className='text-[18px] font-light'>Hello Again</h3>
           </span>
