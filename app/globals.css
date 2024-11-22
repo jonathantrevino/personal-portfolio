@@ -20,6 +20,7 @@
   --container-color: #F8F8FA;
   --skill-card: #E5E7EB;
   --cta: #4902FF;
+  --skill-image: #E5E7EB
 }
 
 /* Dark Theme */
@@ -41,6 +42,7 @@
   /* Darker gray/black for skill cards */
   --cta: #1D72B8;
   /* A blue accent for CTA, but still dark enough */
+  --skill-image: #2A2A2A
 }
 
 .not-important {
