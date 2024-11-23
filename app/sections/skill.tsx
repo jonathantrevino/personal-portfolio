@@ -10,7 +10,7 @@ export const Skill = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="w-full h-full aspect-square group relative bg-base-200 hover:scale-[1.05] transition-all z-[1]"
+            className="w-full h-full aspect-square group relative bg-base-200 hover:scale-[1.05] hover:shadow-md transition-all z-[1]"
           >
             <Image
               className="rounded-md transition-all ease-in-out group-hover:scale-[1.05] group-hover:z-10"
