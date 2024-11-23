@@ -20,7 +20,8 @@
   --container-color: #F8F8FA;
   --skill-card: #E5E7EB;
   --cta: #4902FF;
-  --skill-image: #E5E7EB
+  --skill-image: #E5E7EB;
+  --text-less-important: #404853;
 }
 
 /* Dark Theme */
@@ -42,7 +43,13 @@
   /* Darker gray/black for skill cards */
   --cta: #1D72B8;
   /* A blue accent for CTA, but still dark enough */
-  --skill-image: #2A2A2A
+  --skill-image: #2A2A2A;
+  --text-less-important: #cbd0d8;
+}
+
+p,
+.text-less-important {
+  color: var(--text-less-important);
 }
 
 .not-important {
@@ -79,7 +86,7 @@ h2 {
 
 h2.title {
   font-family: var(--font-gabriella), sans-serif;
-  font-size: 23px;
+  font-size: 27px;
 }
 
 div.project-card {
