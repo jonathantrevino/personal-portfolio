@@ -50,19 +50,19 @@ const Page: React.FC<{ params: { slug: string } }> = ({ params }) => {
         <Image className='w-full border border-gray-200' src={project.image_url} width={669} height={476} alt='webportfolios project preview' />
         <section className='space-y-5'>
           <div className='space-y-3'>
-            <h3 className='text-xl'>Overview</h3>
+            <h3 className='text-xl font-semibold'>Overview</h3>
             <p className='leading-relaxed'>{project.overview}</p>
           </div>
           <div className='space-y-3'>
-            <h3 className='text-xl'>Features</h3>
+            <h3 className='text-xl font-semibold'>Features</h3>
             <ul className='leading-relaxed space-y-2 list-disc ml-4'>{project.features.map((feature) => <li key={feature}>{feature}</li>)}</ul>
           </div>
           <div className='space-y-3'>
-            <h3 className='text-xl'>Challenges</h3>
+            <h3 className='text-xl font-semibold'>Challenges</h3>
             <ul className='leading-relaxed space-y-2 list-disc ml-4'>{project.obstacles.map((obstacle) => <li key={obstacle}>{obstacle}</li>)}</ul>
           </div>
           <div className='space-y-3'>
-            <h3 className='text-xl'>Results</h3>
+            <h3 className='text-xl font-semibold'>Results</h3>
             <p className='leading-relaxed'>{project.results}</p>
           </div>
         </section>
