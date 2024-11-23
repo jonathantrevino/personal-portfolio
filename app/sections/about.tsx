@@ -4,7 +4,7 @@ import { AboutImages } from '../components/aboutImages'
 
 export const About = () => {
   return (
-    <div className='flex gap-[17px] flex-col-reverse xl:flex-row'>
+    <div className='flex gap-[17px] flex-col-reverse xl:flex-row overflow-x-hidden'>
       <div className='space-y-5'>
         <div>
           <span className='flex gap-2 items-center'>
