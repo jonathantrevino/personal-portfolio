@@ -4,7 +4,7 @@ import { AboutImages } from '../components/aboutImages'
 
 export const About = () => {
   return (
-    <div className='flex gap-[17px] flex-col-reverse xl:flex-row overflow-x-hidden'>
+    <div className='flex gap-[17px] flex-col-reverse xl:flex-row'>
       <div className='space-y-5'>
         <div>
           <span className='flex gap-2 items-center'>
@@ -17,9 +17,10 @@ export const About = () => {
           <h2 className='text-[23px] font-bold'>I'm Jonathan Trevino</h2>
         </div>
         <div className='max-w-[565px] space-y-[13px] leading-relaxed'>
-          <p>I am a developer at my core who focuses on building impactful products that solve real problems.</p>
-          <p>When I’m not coding you will often find me re-arranging my room, contemplating buying another keyboard, or building another Gundam (currently at Master Grade).</p>
-          <p>At the moment I am working on growing webportfolios.dev, a directory for developer portfolios and sharing the journey on X (Twitter?). My goal is try to help as many developers as I can.</p>
+          <p>Although I enjoy taking on various roles, my current focus is web development, especially when it comes to configuring cloud services.</p>
+          <p>When I’m not coding you will often find me re-arranging my room, contemplating buying another keyboard, or building another Gundam (currently at Master Grade level).</p>
+          <p>Currently, I’m focused on growing webportfolios.dev, a directory for developer portfolios, while sharing my journey on X (formerly Twitter). My goal is to support as many developers as possible through the products I create.</p>
+
         </div>
       </div>
       <div className='relative h-[300px] xl:w-[570px]'>
