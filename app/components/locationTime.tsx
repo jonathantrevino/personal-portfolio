@@ -27,14 +27,13 @@ export const LocationTime = () => {
   }, []);
 
   return (
-    <div className='flex gap-5'>
+    <div className='flex gap-2'>
       <div className="flex gap-2  items-center">
-        <MapPin />
-        Edinburg, Texas
-      </div>
-      <div className="flex gap-2  items-center">
-        <Clock3 />
         <p>{time}</p>
+      </div>
+      -
+      <div className="flex gap-2  items-center">
+        Edinburg, Texas
       </div>
     </div>
   )
