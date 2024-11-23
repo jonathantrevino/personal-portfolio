@@ -14,8 +14,8 @@ export const Footer = () => {
           <p>Any questions, proposals, or collaborations? Feel free to reach out.</p>
         </div>
         <div className='space-y-[14px]'>
-          <EmailCopy />
           <div className='flex justify-between flex-wrap gap-5'>
+            <EmailCopy />
             <Socials />
           </div>
         </div>
