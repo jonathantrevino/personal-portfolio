@@ -6,7 +6,7 @@ export const Skill = () => {
   return (
     <section>
       <h2 className='title'>Skills</h2>
-      <div className="relative grid grid-cols-5 sm:grid-cols-7 lg:grid-cols-9 gap-2">
+      <div className="relative grid grid-cols-4 sm:grid-cols-7 lg:grid-cols-9 gap-2">
         {skills.map((skill, index) => (
           <div
             key={index}
