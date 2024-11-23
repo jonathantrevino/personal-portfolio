@@ -50,7 +50,7 @@ export const ProjectCard = ({ title, description, image_url, skills, live, users
           </Link>}</span>
       </div>
       <div className='flex justify-between md:flex-row flex-col gap-5 flex-wrap'>
-        <div className='flex gap-3 flex-wrap'>{skills && skills.map((skill) => <div className='skill-card px-2 py-1 rounded-md'>{skill}</div>)}</div>
+        <div className='flex gap-3 flex-wrap'>{skills && skills.map((skill) => <div key={skill} className='skill-card px-2 py-1 rounded-md'>{skill}</div>)}</div>
         <Link className='flex gap-2 self-end group' href={`/projects/${slug}`}>Read More<MoveRight className='group-hover:translate-x-1 transition-all' /></Link>
       </div>
       <div className='justify-center items-end md:flex hidden'>
