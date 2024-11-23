@@ -6,11 +6,11 @@ export const Skill = () => {
   return (
     <section>
       <h2 className='title'>Skills</h2>
-      <div className="relative flex flex-wrap gap-2">
+      <div className="relative grid grid-cols-7 lg:grid-cols-9 gap-2">
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="w-[95px] h-[95px] aspect-square group relative bg-base-200 hover:scale-[1.05] transition-all"
+            className="w-full h-full aspect-square group relative bg-base-200 hover:scale-[1.05] transition-all z-[1]"
           >
             <Image
               className="rounded-md transition-all ease-in-out group-hover:scale-[1.05] group-hover:z-10"
@@ -18,9 +18,9 @@ export const Skill = () => {
               alt={skill.title}
               fill
             />
-            <div className='w-full h-[85px] relative sm:h-[95px] flex justify-center'>
+            <div className='w-full  relative h-full flex justify-center z-[10]'>
               <div className="group-hover:scale-100 scale-50 group-hover:opacity-100 group-hover:bg-[color:var(--skill-image)] rounded-md px-2 opacity-0 absolute bottom-2 block shadow-lg group-hover:z-20 text-xs md:text-sm  transition-all">
-                <div className='flex jusitfy-center text-center w-fit'>
+                <div className='flex jusitfy-center text-center w-fit z-[10]'>
                   {skill.title}
                 </div>
               </div>
