@@ -19,7 +19,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className='flex justify-between items-center gap-[10px] flex-wrap'>
+      <div className='flex justify-between items-center gap-[10px] flex-wrap-reverse'>
 
         <div className='flex gap-[10px] items-center'>
           <svg width="31" height="28" viewBox="0 0 31 28" fill="none" xmlns="http://www.w3.org/2000/svg">
