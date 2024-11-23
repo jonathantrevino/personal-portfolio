@@ -17,7 +17,6 @@ export const Footer = () => {
           <EmailCopy />
           <div className='flex justify-between flex-wrap gap-5'>
             <Socials />
-            <LocationTime />
           </div>
         </div>
       </div>
