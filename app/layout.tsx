@@ -52,7 +52,7 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body
-        className={`antialiased max-w-[1440px] mx-auto px-[24px] md:px-[72px] lg:px-[144px] py-[36px]`}
+        className={`antialiased max-w-[1440px] mx-auto px-[24px] md:px-[72px] lg:px-[144px] py-[36px] overflow-x-hidden`}
       >
         <Nav />
         {children}
