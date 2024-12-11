@@ -4,6 +4,7 @@ import { Copy } from 'lucide-react'
 import Image from 'next/image'
 import { LocationTime } from './locationTime'
 import EmailCopy from './emailCopy'
+import Link from 'next/link'
 
 export const Footer = () => {
   return (
