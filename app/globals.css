@@ -22,11 +22,28 @@
   --cta: #4902FF;
   --skill-image: #E5E7EB;
   --text-less-important: #404853;
+
+  /* sugar-high code highlights */
+  --sh-class: #2d5e9d;
+  --sh-identifier: #354150;
+  --sh-sign: #8996a3;
+  --sh-property: #0550ae;
+  --sh-entity: #249a97;
+  --sh-jsxliterals: #6266d1;
+  --sh-string: #00a99a;
+  --sh-keyword: #f47067;
+  --sh-comment: #a19595;
+
+  /* blog */
+  --pad-x: 18px;
+  --pad-y: 24px;
 }
 
 /* Dark Theme */
 
 [data-theme='dark'] {
+  color-scheme: dark;
+
   --green: #fff;
   --white: #2B3440;
 
@@ -45,6 +62,103 @@
   /* A blue accent for CTA, but still dark enough */
   --skill-image: #2A2A2A;
   --text-less-important: #cbd0d8;
+
+  /* sugar-high code highlights - dark mode */
+  --sh-class: #88baff;
+  /* Soft blue for class names */
+  --sh-identifier: #c0c8d0;
+  /* Light gray for identifiers */
+  --sh-sign: #8b99a6;
+  /* Muted gray-blue for signs */
+  --sh-property: #68b4ff;
+  /* Bright blue for properties */
+  --sh-entity: #4cd1b4;
+  /* Soft teal for entities */
+  --sh-jsxliterals: #9a99ff;
+  /* Light purple-blue for JSX literals */
+  --sh-string: #38d39f;
+  /* Bright green for strings */
+  --sh-keyword: #ff7b72;
+  /* Vibrant red-orange for keywords */
+  --sh-comment: #7c858f;
+  /* Muted gray for comments */
+
+}
+
+.prose .anchor {
+  @apply absolute invisible no-underline;
+
+  margin-left: -1em;
+  padding-right: 0.5em;
+  width: 100%;
+  max-width: 700px;
+  cursor: pointer;
+}
+
+.anchor:hover {
+  @apply visible;
+}
+
+.prose .anchor:after {
+  @apply text-neutral-300 dark:text-neutral-700;
+  content: "#";
+}
+
+.prose *:hover>.anchor {
+  @apply visible;
+}
+
+.prose pre {
+  @apply bg-[color:var(--container-color)] px-[var(--pad-x)] py-[var(--pad-y)];
+  overflow-x: auto;
+}
+
+.prose code {
+  @apply px-1 py-0.5 rounded-lg;
+  overflow-x: scroll;
+}
+
+.prose pre code {
+  @apply p-0;
+  border: initial;
+  line-height: 1.5;
+  overflow-x: auto;
+}
+
+.prose p {
+  @apply my-4;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  @apply mt-6 mb-2;
+}
+
+.prose h1 {
+  @apply font-extrabold;
+}
+
+.prose h2 {
+  @apply font-bold;
+}
+
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  @apply font-medium;
+}
+
+.prose ul {
+  @apply list-disc pl-6;
+}
+
+.prose ol {
+  @apply list-decimal pl-6;
 }
 
 p,
