@@ -33,7 +33,7 @@ export const project_card: ProjectCardType[] = [
     skills: ['Next.js', 'Tailwind', 'Typescript', 'Firebase', 'AWS'],
     slug: 'webportfolios.dev',
     live: 'https://www.webportfolios.dev',
-    users: 40,
+    users: 80,
   }
 ]
 
