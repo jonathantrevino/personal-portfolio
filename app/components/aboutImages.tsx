@@ -33,11 +33,11 @@ export const AboutImages = () => {
       if (window.matchMedia('(max-width: 768px)').matches) {
         // For smaller screens
         setAnimationProps({ rotate: '-1deg', top: 10, left: 40 });
-        setAnimationPropsTwo({ rotate: '-1deg', bottom: 10, right: 40 });
+        setAnimationPropsTwo({ rotate: '1deg', bottom: 10, right: 40 });
       } else {
         // For larger screens
         setAnimationProps({ rotate: '-3deg', top: 32, left: 90 });
-        setAnimationPropsTwo({ rotate: '-3deg', bottom: 32, right: 90 });
+        setAnimationPropsTwo({ rotate: '3deg', bottom: 32, right: 90 });
       }
     };
 
