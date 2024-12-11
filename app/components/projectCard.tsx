@@ -54,7 +54,7 @@ export const ProjectCard = ({ title, description, image_url, skills, live, users
         <Link className='flex gap-2 self-end group' href={`/projects/${slug}`}>Read More<MoveRight className='group-hover:translate-x-1 transition-all' /></Link>
       </div>
       <div className='justify-center items-end md:flex hidden'>
-        <div className='lg:relative lg:-bottom-24 absolute -bottom-80'>
+        <div className='lg:relative lg:-bottom-24 absolute -bottom-80 transition-all'>
           <motion.img style={{ y }} className='px-4' src={image_url} width={669} height={476} alt='webportfolios project preview' />
         </div>
       </div>
