@@ -17,10 +17,18 @@ export const metadata: Metadata = {
   description: "Developer with 2+ years of experience building impactful products that solve real problems. Currently working on webportfolios.dev, platform for developer portfolio inspiration.",
   keywords: "software engineer, web developer, web developer portfolio, dev portfolio, next.js portfolio",
   openGraph: {
+    title: 'Jonathan Trevino',
+    description: 'Developer with 2+ years of experience building impactful products that solve real problems. Currently working on webportfolios.dev, platform for developer portfolio inspiration.',
     images: {
       url: '/opengraph-image.png'
-    }
-  }
+    },
+    siteName: 'jonathantrevino.com',
+    locale: 'en_US',
+  },
+  creator: 'Jonathan Trevino',
+  applicationName: 'Jonathan Trevino Portfolio',
+  generator: 'Next.js',
+  metadataBase: new URL('https://jonathantrevino.com')
 };
 
 export default function RootLayout({
