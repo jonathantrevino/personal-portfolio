@@ -3,6 +3,13 @@ import { formatDate, getBlogPosts } from '../utils'
 import { CustomMDX } from '../mdx'
 import { Spacer } from '@/app/components/spacer'
 
+export async function generateStaticParams() {
+  let posts = getBlogPosts()
+  return posts.map((post) => ({
+    slug: post.slug,
+  }))
+}
+
 const page = ({ params }: { params: { slug: string } }) => {
   let post = getBlogPosts().find((post) => post.slug === params.slug)
   if (!post) { return <div>Not Found</div> }
