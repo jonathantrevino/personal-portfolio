@@ -135,10 +135,8 @@ export const Nav = () => {
       </Link>
       <div className='flex items-center gap-5'>
         <ThemeSwitcher />
-        {/*
         <div className='h-[15px] w-[.05px] bg-[color:var(--not-important)]'></div>
         <Link href='/blogs' className=''>Blogs</Link>
-        */}
       </div>
     </nav>
   )
