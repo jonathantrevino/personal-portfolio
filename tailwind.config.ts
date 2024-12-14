@@ -1,4 +1,3 @@
-import { keyframes } from "tailwindcss";
 import type { Config } from "tailwindcss";
 
 export default {
