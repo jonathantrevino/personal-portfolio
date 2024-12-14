@@ -23,6 +23,9 @@
   --skill-image: #E5E7EB;
   --text-less-important: #404853;
 
+  --blue-container-color: #DBEAFE;
+  --blue-border-color: #93C5FE;
+
   /* sugar-high code highlights */
   --sh-class: #2d5e9d;
   --sh-identifier: #354150;
@@ -62,6 +65,9 @@
   /* A blue accent for CTA, but still dark enough */
   --skill-image: #2A2A2A;
   --text-less-important: #cbd0d8;
+
+  --blue-container-color: #1E3A8A;
+  --blue-border-color: #61A5FA;
 
   /* sugar-high code highlights - dark mode */
   --sh-class: #88baff;
@@ -109,17 +115,17 @@
 }
 
 .prose pre {
-  @apply bg-[color:var(--container-color)] px-[var(--pad-x)] py-[var(--pad-y)];
+  @apply bg-[color:var(--container-color)] border border-[color:var(--skill-card)] rounded-md px-[var(--pad-x)] py-[var(--pad-y)];
   overflow-x: auto;
 }
 
 .prose code {
-  @apply px-1 py-0.5 rounded-lg;
+  @apply px-1 py-0.5 rounded-md bg-[color:var(--container-color)] border border-[color:var(--skill-card)];
   overflow-x: scroll;
 }
 
 .prose pre code {
-  @apply p-0;
+  @apply p-0 bg-[color:var(--container-color)];
   border: initial;
   line-height: 1.5;
   overflow-x: auto;
@@ -135,7 +141,7 @@
 .prose h4,
 .prose h5,
 .prose h6 {
-  @apply mt-6 mb-2;
+  @apply mt-6 mb-2 font-bold;
 }
 
 .prose h1 {
@@ -146,7 +152,10 @@
   @apply font-bold;
 }
 
-.prose h3,
+.prose h3 {
+  @apply text-[19px] font-bold;
+}
+
 .prose h4,
 .prose h5,
 .prose h6 {
@@ -159,6 +168,10 @@
 
 .prose ol {
   @apply list-decimal pl-6;
+}
+
+.prose a {
+  @apply text-[color:var(--cta)];
 }
 
 p,
