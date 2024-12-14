@@ -1,0 +1,52 @@
+---
+title: "My Rust Learning Journey"
+publishedAt: "2024-12-10"
+summary: 'Documenting my adventure into the world of Rust, from basics to building my first projects.'
+category: ['rust']
+---
+
+Rust is a systems programming langauge that aims to provide the low-level control of languages like C and C++ while ensuring memory safety and thread safety without using a garbage collector.
+
+### Why did I want to start learning rust?
+
+I've decided to learn Rust to build a screenshot / screen recording mac application idea I've had for a while. 
+
+I was originally going to use Electron.js as its backend uses node and I'm already very familiar with JavaScript, but after a long time spent on Reddit I've seen that a lot of people don't like the large bundle size.
+
+Now, my plans are to use Tauri 2.0, which does have support for React, but apparently I will need to eventually need to implement some Rust.
+
+### What is Tauri 2.0?
+
+Tauri 2.0 is a significant update to the Tauri framework, a cross-platform application development tool that allows developers to build small, fast native apps for desktop (Windows, macOS, Linux) and mobile (iOS, Android) platforms using web technologies like HTML, CSS, and JavaScript, with the backend logic primarily powered by Rust.
+
+### Popular Applications built with Tauri 2.0
+
+- [Cap](https://cap.so/) - Open source alternative to [Loom](https://www.loom.com/). Lightweight, powerful, and stunning. Record and share securely in seconds with custom S3 bucket support.
+- [ChatGPT Desktop Application](https://github.com/lencx/ChatGPT) - [ChatGPT](https://chatgpt.com/) desktop application is an official software version of OpenAI's ChatGPT that you can install and run directly on your computer, rather than accessing it through a web browser. It provides a convenient way to use ChatGPT with added features tailored for desktop users.
+
+## Setting Up Rust On Mac
+
+Requirements:
+
+- [rust-analyzer](https://rust-analyzer.github.io/)
+- [rustaceanvim](https://github.com/mrcjkb/rustaceanvim)
+
+To install rust-analyzer: `:MasonInstall rust-analyzer`
+
+To install rustaceanvim:
+
+```lua
+return {
+	"mrcjkb/rustaceanvim",
+	version = "^5", -- Recommended
+	lazy = false, -- This plugin is already lazy
+	["rust-analzyer"] = {
+		cargo = {
+			allFeatures = true,
+		},
+	},
+}
+```
+
+<Update title={"Still In Progress"} message={"I'm currently learning Rust and documenting my journey as I go, expect regular updates as I progress."} />
+
