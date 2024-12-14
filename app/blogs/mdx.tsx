@@ -3,6 +3,7 @@ import { MDXRemote } from 'next-mdx-remote/rsc'
 import Image from 'next/image';
 import Link from 'next/link';
 import { highlight } from 'sugar-high'
+import Update from '../components/blogs/blocks/update';
 
 function slugify(str: string) {
   return str.toString()
@@ -55,6 +56,7 @@ function customCode({ children, ...props }: any) {
 }
 
 let components = {
+  Update, // For articles still in progress
   h1: createHeading(1),
   h2: createHeading(2),
   h3: createHeading(3),
