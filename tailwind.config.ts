@@ -1,3 +1,4 @@
+import { keyframes } from "tailwindcss";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -11,7 +12,17 @@ export default {
       fontFamily: {
         gabriella: "var(--font-gabriella)",
       },
+      animation: {
+        slowRotate: "slowRotate 3s linear infinite", // Define the animation
+      },
+      keyframes: {
+        slowRotate: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+      },
     },
   },
   plugins: [],
 } satisfies Config;
+
