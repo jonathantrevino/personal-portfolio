@@ -3,7 +3,7 @@ import { projects } from '@/app/constants/project'
 import { Spacer } from '@/app/components/spacer'
 import Image from 'next/image'
 import Link from 'next/link'
-import { ExternalLink } from 'lucide-react'
+import NotFound from '@/app/not-found'
 
 // or Dynamic metadata
 export async function generateMetadata({ params }: { params: { slug: string } }) {
@@ -25,7 +25,7 @@ const Page: React.FC<{ params: { slug: string } }> = ({ params }) => {
   const project = projects.find((project) => project.slug === slug)
 
   if (!slug || !project) {
-    return <div className=''><Spacer /><div className='flex justify-center items-center'><div><h1>Project Not Found</h1><div className='text-center font-light'>Return back <Link href='/' className='link underline font-normal'>home</Link></div></div></div><Spacer /><Spacer /><Spacer /></div>
+    return NotFound()
   }
   return (
     <div>
