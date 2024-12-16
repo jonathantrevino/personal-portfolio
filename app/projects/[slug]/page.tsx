@@ -11,9 +11,12 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
   return {
     title: `Jonathan Trevino ${project ? '- ' + project.slug : '- 404'}`,
+    description: project?.description,
   }
 
-} export async function generateStaticParams() {
+}
+
+export async function generateStaticParams() {
   return projects.map((item) => ({
     slug: item.slug,
   }))
