@@ -1,5 +1,4 @@
-import { getBlogPosts } from '@/app/blogs/utils'
-import Link from 'next/link';
+import { getBlogPosts } from '@/app/blog/utils'
 import React from 'react'
 import BlogPreview from './blogPreview';
 
@@ -7,7 +6,7 @@ const Recents = () => {
   const recents = getBlogPosts();
   return (
     <div className='flex-[0.6] space-y-8'>
-      <h1 className='title'>Recently Published</h1>
+      <h1 className='text-[23px]'>Recently Published</h1>
       <div className='space-y-8'>
         {recents.sort((a, b) => {
           if (new Date(a.metadata.publishedAt) > new Date(b.metadata.publishedAt)) {
