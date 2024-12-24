@@ -5,7 +5,7 @@ import { AboutImages } from '../components/aboutImages'
 export const About = () => {
   return (
     <div className='flex gap-[17px] flex-col-reverse xl:flex-row'>
-      <div className='space-y-5'>
+      <div className='space-y-5 mx-auto'>
         <div>
           <span className='flex gap-2 items-center'>
             <svg width="49" height="24" viewBox="0 0 49 24" fill="none" xmlns="http://www.w3.org/2000/svg">
