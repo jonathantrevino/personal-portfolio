@@ -1,11 +1,9 @@
 'use client'
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { motion, useScroll, useTransform } from "motion/react"
-import { useRouter } from 'next/navigation';
-import Image from 'next/image';
 import { ProjectCardType } from '../constants/project';
 import Link from 'next/link';
-import { ExternalLink, MoveRight } from 'lucide-react';
+import { MoveRight } from 'lucide-react';
 
 function useParallax(value: any, distance: number) {
   return useTransform(value, [0, 1], [-distance, distance]);
@@ -41,20 +39,25 @@ export const ProjectCard = ({ title, description, image_url, skills, live, users
           <h3 className='font-bold text-[23px]'>{title}</h3>
           <p className=''>{description}</p>
         </span>
-        <span className='flex gap-2 h-fit overflow-visible'>{live &&
-          <Link className='group overflow-visible hover:scale-[1.07] hover:rotate-3 transition-all ease-out' href={live}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-external-link">
-              <path className='' d="M15 3h6v6" /><path className='' d="M10 14 21 3" />
-              <path className='' d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-            </svg>
-          </Link>}</span>
+        <div className='flex gap-5 items-start'>
+          <span className='flex gap-2 h-fit overflow-visible'>{live &&
+            <Link className='group overflow-visible hover:scale-[1.07] hover:rotate-3 transition-all ease-out' href={live}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-external-link">
+                <path className='' d="M15 3h6v6" /><path className='' d="M10 14 21 3" />
+                <path className='' d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+              </svg>
+            </Link>}</span>
+
+          <div className=''>
+            <Link className='flex gap-2 self-end group' href={`/projects/${slug}`}>Read More<MoveRight className='group-hover:translate-x-1 transition-all' /></Link>
+          </div>
+
+        </div>
+
       </div>
-      <div className='flex justify-between md:flex-row flex-col gap-5 flex-wrap'>
-        <div className='flex gap-3 flex-wrap'>{skills && skills.map((skill) => <div key={skill} className='skill-card px-2 py-1 rounded-md'>{skill}</div>)}</div>
-        <Link className='flex gap-2 self-end group' href={`/projects/${slug}`}>Read More<MoveRight className='group-hover:translate-x-1 transition-all' /></Link>
-      </div>
-      <div className='justify-center items-end md:flex hidden'>
-        <div className='lg:relative lg:-bottom-24 absolute -bottom-80 transition-all'>
+      <div className='flex gap-3 flex-wrap'>{skills && skills.map((skill) => <div key={skill} className='skill-card px-2 py-1 rounded-md'>{skill}</div>)}</div>
+      <div className='justify-center items-end flex'>
+        <div className='lg:relative lg:-bottom-24 md:absolute md:-bottom-80 -bottom-24 relative transition-all'>
           <motion.img style={{ y }} className='px-4' src={image_url} width={669} height={476} alt='webportfolios project preview' />
         </div>
       </div>
