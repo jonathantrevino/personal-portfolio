@@ -36,7 +36,7 @@ const Page: React.FC<{ params: { slug: string } }> = ({ params }) => {
       <Spacer />
       <main className='space-y-7'>
         <section className='space-y-3'>
-          <div className='flex justify-between sm:flex-row flex-col gap-3'>
+          <div className='flex justify-between sm:flex-row flex-col-reverse gap-3'>
             <span>
               <h1 className='title'>{project.title}</h1>
               <h2 className='description'>{project.description}</h2>
