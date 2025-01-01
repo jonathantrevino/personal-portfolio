@@ -16,8 +16,8 @@ export const About = () => {
           </span>
           <h2 className='text-[23px] font-bold'>I'm Jonathan Trevino</h2>
         </div>
-        <div className='max-w-[565px] space-y-[13px] leading-relaxed'>
-          <p>Although I enjoy taking on various roles, my current focus is web development, especially when it comes to configuring cloud services.</p>
+        <div className='max-w-[565px] space-y-[13px] leading-8'>
+          <p>I specialize in web development, and I am currently enjoying tinkering with AWS and building things that just work.</p>
           <p>When I’m not coding you will often find me re-arranging my room, contemplating buying another keyboard, or building another Gundam (currently at Master Grade level).</p>
           <p>Currently, I’m focused on growing webportfolios.dev, a directory for developer portfolios, while sharing my journey on X (formerly Twitter). My goal is to support as many developers as possible through the products I create.</p>
 
