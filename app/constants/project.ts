@@ -33,7 +33,7 @@ export const project_card: ProjectCardType[] = [
     skills: ['Next.js', 'Tailwind', 'Typescript', 'Firebase', 'AWS'],
     slug: 'webportfolios.dev',
     live: 'https://www.webportfolios.dev',
-    users: 80,
+    users: 100,
   }
 ]
 
@@ -62,7 +62,7 @@ export const projects: ProjectType[] = [
     skills: ['Next.js', 'Tailwind', 'Typescript', 'Firebase', 'AWS'],
     slug: 'webportfolios.dev',
     live: 'https://www.webportfolios.dev',
-    users: 40,
+    users: 100,
     overview: 'webportfolios.dev is a platform that enables users to help others find inspiration, improving their own design, and how to showcase their skills effectively from browsing a directory of developer portfolios uploaded by other developers.',
     features: [
       'Directory of developer portfolios sorted by tech stacks, and professional titles',
