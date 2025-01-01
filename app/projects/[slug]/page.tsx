@@ -4,6 +4,7 @@ import { Spacer } from '@/app/components/spacer'
 import Image from 'next/image'
 import Link from 'next/link'
 import NotFound from '@/app/not-found'
+import { MoveLeft } from 'lucide-react'
 
 // or Dynamic metadata
 export async function generateMetadata({ params }: { params: { slug: string } }) {
@@ -40,12 +41,20 @@ const Page: React.FC<{ params: { slug: string } }> = ({ params }) => {
               <h1 className='title'>{project.title}</h1>
               <h2 className='description'>{project.description}</h2>
             </span>
-            <span className='flex gap-2 h-fit'>{project.live && <Link className='group overflow-visible hover:scale-[1.07] hover:rotate-3 transition-all ease-out' href={project.live}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-external-link">
-                <path className='' d="M15 3h6v6" /><path className='' d="M10 14 21 3" />
-                <path className='' d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-              </svg>
-            </Link>}</span>
+            <div className='flex gap-5'>
+              <div className=''>
+                <Link className='flex gap-2 self-end group' href={`/`}><MoveLeft className='group-hover:-translate-x-1 transition-all' />Go Back</Link>
+              </div>
+              <span className='flex gap-2 h-fit'>
+                {project.live &&
+                  <Link className='group overflow-visible hover:scale-[1.07] hover:rotate-3 transition-all ease-out' href={project.live}>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-external-link">
+                      <path className='' d="M15 3h6v6" /><path className='' d="M10 14 21 3" />
+                      <path className='' d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    </svg>
+                  </Link>}
+              </span>
+            </div>
 
           </div>
           <div className='flex gap-3 flex-wrap'>{project.skills && project.skills.map((skill) => <div key={skill} className='skill-card px-2 py-1 rounded-md'>{skill}</div>)}</div>
