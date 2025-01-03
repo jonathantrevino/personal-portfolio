@@ -33,7 +33,7 @@ export const ProjectCard = ({ title, description, image_url, skills, live, users
       onClick={handleClick}
       className='md:aspect-video p-[30px] rounded-md relative project-card overflow-hidden transition-all space-y-5'
     >
-      <div className='flex justify-between overflow-visible md:flex-row flex-col'>
+      <div className='flex justify-between overflow-visible md:flex-row flex-col gap-3'>
         <span>
           <span className='text-gray-500 text-sm not-important'>{users}+ Users</span>
           <h3 className='font-bold text-[23px]'>{title}</h3>
