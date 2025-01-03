@@ -49,10 +49,10 @@ export const AboutImages = () => {
     };
   }, []);
   return (
-    <div className='flex justify-center items-center flex-[1] relative sm:w-[565px] h-full'>
-      <motion.img whileInView={animationProps} src='/corne_keyboard.webp' className='h-fit absolute' width={166} height={166} alt="jonathan trevino's headshot" />
-      <motion.img src='/jonathan_trevino_headshot.webp' className='h-fit absolute z-[2]' width={166} height={166} alt="jonathan trevino's headshot" />
-      <motion.img whileInView={animationPropsTwo} src='/gundam.webp' className='h-fit absolute z-[1]' width={166} height={166} alt="jonathan trevino's headshot" />
+    <div className='flex justify-center items-center flex-[1] relative w-full sm:w-[565px] h-full mx-auto'>
+      <motion.img whileInView={animationProps} src='/corne_keyboard.webp' className='h-fit absolute select-none' width={166} height={166} alt="jonathan trevino's headshot" draggable={false} />
+      <motion.img src='/jonathan_trevino_headshot.webp' className='h-fit absolute z-[2] select-none' width={166} height={166} alt="jonathan trevino's headshot" draggable={false} />
+      <motion.img whileInView={animationPropsTwo} src='/gundam.webp' className='h-fit absolute z-[1] select-none' width={166} height={166} alt="jonathan trevino's headshot" draggable={false} />
     </div>
   )
 }

@@ -38,20 +38,20 @@ export const project_card: ProjectCardType[] = [
 ]
 
 export const skills: { image_url: string, title: string }[] = [
-  { image_url: "/typescript.svg", title: "TypeScript" },
-  { image_url: "/javascript.svg", title: "JavaScript" },
-  { image_url: "/react.svg", title: "React" },
-  { image_url: "/next.svg", title: "Next" },
-  { image_url: "/tailwind.svg", title: "Tailwind" },
-  { image_url: "/firebase.svg", title: "Firebase" },
-  { image_url: "/express.svg", title: "Express" },
-  { image_url: "/node.svg", title: "Node" },
-  { image_url: "/aws.svg", title: "Aws" },
-  { image_url: "/mysql.svg", title: "MySql" },
-  { image_url: "/mongo.svg", title: "Mongo" },
-  { image_url: "/java.svg", title: "Java" },
-  { image_url: "/c.svg", title: "C" },
-  { image_url: "/python.svg", title: "Python" },
+  { image_url: "/typescript.webp", title: "TypeScript" },
+  { image_url: "/javascript.webp", title: "JavaScript" },
+  { image_url: "/react.webp", title: "React" },
+  { image_url: "/next.webp", title: "Next" },
+  { image_url: "/tailwind.webp", title: "Tailwind" },
+  { image_url: "/firebase.webp", title: "Firebase" },
+  { image_url: "/express.webp", title: "Express" },
+  { image_url: "/node.webp", title: "Node" },
+  { image_url: "/aws.webp", title: "Aws" },
+  { image_url: "/mysql.webp", title: "MySql" },
+  { image_url: "/mongo.webp", title: "Mongo" },
+  { image_url: "/java.webp", title: "Java" },
+  { image_url: "/c.webp", title: "C" },
+  { image_url: "/python.webp", title: "Python" },
 ];
 
 export const projects: ProjectType[] = [
