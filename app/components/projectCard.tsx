@@ -33,7 +33,7 @@ export const ProjectCard = ({ title, description, image_url, skills, live, users
       onClick={handleClick}
       className='md:aspect-video p-[30px] rounded-md relative project-card overflow-hidden transition-all space-y-5'
     >
-      <div className='flex justify-between overflow-visible'>
+      <div className='flex justify-between overflow-visible md:flex-row flex-col'>
         <span>
           <span className='text-gray-500 text-sm not-important'>{users}+ Users</span>
           <h3 className='font-bold text-[23px]'>{title}</h3>
@@ -47,13 +47,10 @@ export const ProjectCard = ({ title, description, image_url, skills, live, users
                 <path className='' d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
               </svg>
             </Link>}</span>
-
           <div className=''>
             <Link className='flex gap-2 self-end group' href={`/projects/${slug}`}>Read More<MoveRight className='group-hover:translate-x-1 transition-all' /></Link>
           </div>
-
         </div>
-
       </div>
       <div className='flex gap-3 flex-wrap'>{skills && skills.map((skill) => <div key={skill} className='skill-card px-2 py-1 rounded-md'>{skill}</div>)}</div>
       <div className='justify-center items-end flex'>
