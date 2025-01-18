@@ -13,7 +13,7 @@ export const Footer = () => {
         <h2 className='title text-[23px]'>Let's Connect</h2>
         <p className='font-light'>Any questions, proposals, or collaborations? Feel free to reach out.</p>
       </div>
-      <div className='space-y-[17px]'>
+      <div className='space-y-[17px] flex md:flex-row flex-col justify-between'>
         <EmailCopy />
         <Socials />
       </div>
