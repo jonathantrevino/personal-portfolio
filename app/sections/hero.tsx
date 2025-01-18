@@ -4,11 +4,11 @@ import Link from 'next/link'
 
 export const Hero = () => {
   return (
-    <section className='space-y-[17px]'>
-      <div className='space-y-[7px]'>
+    <section className='space-y-[17px] py-[48px]'>
+      <span>
         <h1>Jonathan Trevino</h1>
         <h2>Software engineer in web development</h2>
-      </div>
+      </span>
       <div className='max-w-[544px] text-less-important'>
         <span className='text-[color:#F15B22] font-medium'>UTSA</span>{" "}
         Graduate, 2+ years experience developing websites that solve real problems, currently building
