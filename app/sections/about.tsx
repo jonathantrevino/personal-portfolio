@@ -17,8 +17,8 @@ export const About = () => {
           </span>
           <h2 className='text-[23px] font-bold'>I'm Jonathan Trevino</h2>
         </div>
-        <div className='space-y-[13px] leading-8'>
-          <p>I specialize in web development, and enjoy working with AWS to build things that just work.</p>
+        <div className='space-y-[23px] leading-7'>
+          <p>I specialize in web development and enjoy leveraging  AWS to design cost effective and scalable cloud solutions.</p>
           <p>When I’m not coding, I'm usually re-arranging my room, tweaking my nvim configuration, or building more Gundam models to add to my collection-currently at Master Grade level.</p>
           <div>Right now, I'm focused on growing
             <Link href='https://www.webportfolios.dev' className='inline-flex items-center align-middle ml-[5px] py-[1px] px-1 bg-[color:var(--container-color)] rounded-md border border-[color:var(--skill-card)]'>
@@ -30,7 +30,8 @@ export const About = () => {
               webportfolios
               <span className='font-medium text-[color:var(--cta)]'>.dev</span>
             </Link>{" "}
-            while sharing my journey on X (formerly Twitter). My goal is to support as many developers as possible through the products I create.
+            while actively searching for job opportunities. I'm actively sharing my journey on X, building in public, growing a community of developers, and helping them craft standout portfolios.
+
           </div>
         </div>
       </div>
