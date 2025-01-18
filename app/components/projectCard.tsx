@@ -31,7 +31,7 @@ export const ProjectCard = ({ title, description, image_url, skills, live, users
       animate={isClicked ? 'clicked' : ''}
       transition={{ duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
       onClick={handleClick}
-      className='md:aspect-video p-[30px] rounded-md relative project-card overflow-hidden transition-all space-y-5'
+      className='md:aspect-video p-[30px] rounded-md relative project-card overflow-hidden transition-all space-y-5 border border-[color:var(--skill-card)]'
     >
       <div className='flex justify-between overflow-visible md:flex-row flex-col gap-3'>
         <span>
