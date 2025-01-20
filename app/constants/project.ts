@@ -29,7 +29,7 @@ export const project_card: ProjectCardType[] = [
 
     title: 'webportfolios.dev',
     description: 'Directory of Developer Portfolios',
-    image_url: '/webportfolios_homepage.png',
+    image_url: '/webportfolios_homepage.webp',
     skills: ['Next.js', 'Tailwind', 'Typescript', 'Firebase', 'AWS'],
     slug: 'webportfolios.dev',
     live: 'https://www.webportfolios.dev',
@@ -59,7 +59,7 @@ export const projects: ProjectType[] = [
   {
     title: 'webportfolios.dev',
     description: 'Directory of Developer Portfolios',
-    image_url: '/webportfolios_homepage.png',
+    image_url: '/webportfolios_homepage.webp',
     skills: ['Next.js', 'Tailwind', 'Typescript', 'Firebase', 'AWS'],
     slug: 'webportfolios.dev',
     live: 'https://www.webportfolios.dev',
