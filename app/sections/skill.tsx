@@ -28,7 +28,7 @@ export const Skill = () => {
             </div>
           </div>
         ))}
-      </div>{" "}    </section>
-  )
+      </div>{" "}
+    </section>)
 }
 
