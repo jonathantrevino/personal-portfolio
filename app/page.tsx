@@ -12,6 +12,7 @@ export default function Home() {
       <Spacer />
       <Project />
       <Spacer />
+      <Skill />
       <Spacer />
       <About />
       <Spacer />
