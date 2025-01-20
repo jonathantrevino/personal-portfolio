@@ -62,7 +62,7 @@ export const ProjectCard = ({ title, description, image_url, skills, live, users
 
         <div className='flex gap-3 flex-wrap'>{skills && skills.map((skill) => <div key={skill} className='skill-card px-2 py-1 rounded-md'>{skill}</div>)}</div>
         <div className='justify-center items-end flex'>
-          <div className='lg:relative lg:-bottom-24 md:absolute md:-bottom-[320px] -bottom-24 relative transition-all group-hover:rotate-[-14deg] group-hover:translate-x-32 duration-300'>
+          <div className='lg:relative lg:-bottom-32 md:absolute md:-bottom-[320px] -bottom-24 relative transition-all group-hover:rotate-[-6deg]  group-hover:translate-x-32 duration-300'>
             <motion.img style={{ y }} className='px-4' src={image_url} width={669} height={476} alt='webportfolios project preview' />
           </div>
         </div>
