@@ -46,13 +46,14 @@ export const skills: { image_url: string, title: string }[] = [
   { image_url: "/firebase.webp", title: "Firebase" },
   { image_url: "/express.webp", title: "Express" },
   { image_url: "/node.webp", title: "Node" },
-  { image_url: "/aws.webp", title: "Aws" },
+  { image_url: "/aws.webp", title: "AWS" },
   { image_url: "/mysql.webp", title: "MySql" },
   { image_url: "/mongo.webp", title: "Mongo" },
   { image_url: "/java.webp", title: "Java" },
   { image_url: "/c.webp", title: "C" },
   { image_url: "/python.webp", title: "Python" },
 ];
+
 
 export const projects: ProjectType[] = [
   {
