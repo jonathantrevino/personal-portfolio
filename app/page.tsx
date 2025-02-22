@@ -3,6 +3,8 @@ import { Spacer } from "./components/spacer";
 import { Project } from "./sections/project";
 import { Skill } from "./sections/skill";
 import { About } from "./sections/about";
+import SideNav from "./components/sideNav";
+import { Footer } from "./components/footer";
 
 export default function Home() {
   return (
@@ -16,6 +18,7 @@ export default function Home() {
       <Spacer />
       <About />
       <Spacer />
+      <Footer />
     </div>
   );
 }
