@@ -32,7 +32,7 @@ const Page: React.FC<{ params: { slug: string } }> = ({ params }) => {
     return NotFound()
   }
   return (
-    <div>
+    <div className=''>
       <Spacer />
       <main className='space-y-7'>
         <section className='space-y-3'>

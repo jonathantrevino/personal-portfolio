@@ -4,6 +4,7 @@ import "./globals.css";
 import { Nav } from "./components/nav";
 import { Footer } from "./components/footer";
 import Script from "next/script";
+import SideNav from "./components/sideNav";
 
 
 const gabriella = localFont({
@@ -73,11 +74,18 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body
-        className={`antialiased max-w-[1440px] mx-auto px-[24px] md:px-[72px] lg:px-[144px] py-[36px] overflow-x-hidden`}
+        className={`antialiased max-w-[1440px] mx-auto px-[24px] md:px-[72px]  py-[36px] overflow-x-hidden`}
       >
         <Nav />
-        {children}
-        <Footer />
+        <div className='flex gap-12'>
+          <aside className='w-fit'>
+            <SideNav />
+          </aside>
+          <main>
+            {children}
+            <Footer />
+          </main>
+        </div>
       </body>
     </html>
   );

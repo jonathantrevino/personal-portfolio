@@ -13,7 +13,7 @@ const EmailCopy = () => {
   }
   return (
     <div className='flex gap-2 items-center'>
-      <div role='button' className='w-fit gap-[10px] flex text-[color:var(--cta)]' onClick={copyEmailToClipBoard}>
+      <div role='button' className='w-fit gap-[10px] flex text-[color:var(--cta)] active:scale-95' onClick={copyEmailToClipBoard}>
         <Copy />hello@jonathantrevino.com
       </div>
       {emailCopied &&
