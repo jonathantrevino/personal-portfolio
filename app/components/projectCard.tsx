@@ -1,17 +1,39 @@
 'use client'
-import Image from 'next/image'
 import React from 'react'
 import { ProjectCardType } from '../constants/project'
 import Link from 'next/link'
 import { ExternalLink, MoveRight } from 'lucide-react'
+import { motion } from 'motion/react'
 
 export const ProjectCard = ({ title, description, image_url, skills, live, users, slug }: ProjectCardType) => {
   return (
-    <div className='space-y-4'>
-      <div className='bg-[color:var(--container-color)] border-[color:var(--skill-card)] flex justify-center border overflow-hidden rounded-t-md'>
-        <Image src={image_url} width={669} height={47} className='shadow-md shadow-gray-200 project-image' alt='screenshot of homepage for webportfolios.dev' />
+    <div className='space-y-4 flex gap-8 relative lg:flex-row flex-col bg-[color:var(--skill-card)] border border-[color:var(--skill-card)] p-8 rounded-md shadow-sm'>
+      <div className='flex justify-center items-center flex-[0.6] relative w-full min-h-[380px]  h-full mx-auto'>
+        <div className='w-[369px] h-[301px] relative'>
+
+          {image_url.map((img_url, index) =>
+            <motion.img
+              key={index}
+              src={img_url}
+              width={369}
+              height={301}
+              alt="screenshot of homepage for webportfolios.dev"
+              className="shadow-md project-image absolute rounded-md hover:scale-105 transition-all border border-[color:var(--skill-card)]"
+              draggable={false}
+              whileInView={{
+                zIndex: index === 0 ? 3 : index === 1 ? 2 : 1,
+                top: index === 0 ? '40px' : index === 1 ? '0px' : '0px',
+                left: index === 0 ? '40px' : index === 1 ? '0px' : '-40px',
+                rotate: index === 0 ? '6deg' : index === 1 ? '0deg' : '-6deg',
+              }}
+              transition={{
+                duration: 0.3
+              }}
+            />
+          )}
+        </div>
       </div>
-      <div className='flex items-start justify-between gap-8 flex-wrap gap-y-2'>
+      <div className='flex flex-col items-start  gap-8 gap-y-2 flex-[0.4] h-full'>
         <div className='space-y-1'>
           <h3 className='flex gap-1 items-center text-xl font-medium'>
             <svg className='mr-1' width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">

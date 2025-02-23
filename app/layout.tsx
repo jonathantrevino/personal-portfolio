@@ -78,7 +78,7 @@ export default function RootLayout({
       >
         <Nav />
         <div className='flex gap-12'>
-          <aside className='w-fit'>
+          <aside className='w-fit xl:block hidden'>
             <SideNav />
           </aside>
           <main>

@@ -1,7 +1,7 @@
 export type ProjectCardType = {
   title: string,
   description: string,
-  image_url: string,
+  image_url: string[],
   skills: string[],
   slug: string,
   github?: string,
@@ -12,7 +12,7 @@ export type ProjectCardType = {
 export type ProjectType = {
   title: string,
   description: string,
-  image_url: string,
+  image_url: string[],
   skills: string[],
   slug: string,
   github?: string,
@@ -29,7 +29,7 @@ export const project_card: ProjectCardType[] = [
 
     title: 'webportfolios.dev',
     description: 'Directory of Developer Portfolios',
-    image_url: '/webportfolios_homepage.webp',
+    image_url: ['/webportfolios_home.webp', '/webportfolios_browse.webp', '/webportfolios_portfolio.webp'],
     skills: ['Next.js', 'Tailwind', 'Typescript', 'Firebase', 'AWS'],
     slug: 'webportfolios.dev',
     live: 'https://www.webportfolios.dev',
@@ -59,7 +59,7 @@ export const projects: ProjectType[] = [
   {
     title: 'webportfolios.dev',
     description: 'Directory of Developer Portfolios',
-    image_url: '/webportfolios_homepage.webp',
+    image_url: ['/webportfolios_home.webp', '/webportfolios_browse.webp', '/webportfolios_portfolio.webp'],
     skills: ['Next.js', 'Tailwind', 'Typescript', 'Firebase', 'AWS'],
     slug: 'webportfolios.dev',
     live: 'https://www.webportfolios.dev',
