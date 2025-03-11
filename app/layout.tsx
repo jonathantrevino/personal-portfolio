@@ -81,7 +81,7 @@ export default function RootLayout({
           <aside className='w-fit xl:block hidden'>
             <SideNav />
           </aside>
-          <main>
+          <main className='w-full'>
             {children}
             <Footer />
           </main>

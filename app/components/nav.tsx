@@ -143,12 +143,12 @@ export const Nav = () => {
           <li>
             <Link href='/blog' className=''>Blog</Link>
           </li>
-          <li>
+          {/*<li>
             <Link href='/archive' className=''>Archive</Link>
-          </li>
-          <li>
+          </li>*/}
+          {/*<li>
             <Link href='/creatives' className=''>Creatives</Link>
-          </li>
+          </li>*/}
         </ul>
       </div>
       <div className='flex items-center gap-5'>

@@ -13,8 +13,8 @@ const SideNav = () => {
       </Link>
       <div className='space-y-2 text-[color:var(--text-less-important)] font-extralight flex flex-col'>
         <Link href='/blog' className='w-fit hover:translate-x-1 transition-all'>Blog</Link>
-        <Link href='/archive' className='w-fit hover:translate-x-1 transition-all'>Archive</Link>
-        <Link href='/creatives' className='w-fit hover:translate-x-1 transition-all'>Creatives</Link>
+        {/*<Link href='/archive' className='w-fit hover:translate-x-1 transition-all'>Archive</Link>*/}
+        {/*<Link href='/creatives' className='w-fit hover:translate-x-1 transition-all'>Creatives</Link>*/}
       </div>
       <ThemeSwitcher />
     </nav>
