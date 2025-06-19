@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Inter } from 'next/font/google'
 import "./globals.css";
 import { Nav } from "./components/nav";
 import { Footer } from "./components/footer";
@@ -11,6 +12,10 @@ const gabriella = localFont({
   src: './fonts/gabriela-regular-webfont.woff',
   variable: '--font-gabriella',
   weight: "400",
+})
+
+const inter = Inter({
+  subsets: ['latin']
 })
 
 export const metadata: Metadata = {
@@ -51,7 +56,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${gabriella.variable}`}>
+    <html lang="en" className={`${gabriella.variable} ${inter.className}`}>
       <Script
         async
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}`}
@@ -74,18 +79,13 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body
-        className={`antialiased max-w-[1440px] mx-auto px-[24px] md:px-[72px]  py-[36px] overflow-x-hidden`}
+        className={`antialiased max-w-[1060px] mx-auto grid grid-cols-12 gap-[20px] py-[120px] relative`}
       >
-        <Nav />
-        <div className='flex gap-12'>
-          <aside className='w-fit xl:block hidden'>
-            <SideNav />
-          </aside>
-          <main className='w-full'>
-            {children}
-            <Footer />
-          </main>
-        </div>
+        <SideNav />
+        <main className='col-span-10'>
+          {children}
+          <Footer />
+        </main>
       </body>
     </html>
   );

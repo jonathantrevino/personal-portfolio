@@ -10,8 +10,8 @@ export const Footer = () => {
   return (
     <footer className='space-y-[17px]'>
       <div className=''>
-        <h2 className='title text-[23px]'>Let's Connect</h2>
-        <p className='font-light'>Any questions, proposals, or collaborations? Feel free to reach out.</p>
+        <h2 className='title text-[25px]'>Let's Connect</h2>
+        <p className='text-[color:var(--text-not-important)]'>Any questions, proposals, or collaborations? Feel free to reach out.</p>
       </div>
       <div className='space-y-[17px] flex md:flex-row flex-col justify-between'>
         <EmailCopy />

@@ -52,7 +52,6 @@ const page = ({ params }: { params: { category: string, slug: string } }) => {
   if (!post) { return NotFound() }
   return (
     <div>
-      <Spacer />
       <article className='prose max-w-screen-md mx-auto'>
         <div className='m-0 leading-tight'>
           <h1 className='text-[33px]'>{post.metadata.title}</h1>

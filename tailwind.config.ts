@@ -10,6 +10,7 @@ export default {
     extend: {
       fontFamily: {
         gabriella: "var(--font-gabriella)",
+        inter: "var(--font-inter)",
       },
       animation: {
         slowRotate: "slowRotate 3s linear infinite", // Define the animation
