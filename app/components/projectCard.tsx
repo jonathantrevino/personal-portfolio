@@ -18,7 +18,7 @@ export const ProjectCard = ({ title, description, image_url, skills, live, users
             {title}
             {description}
           </span>
-          <div className='flex gap-2'>
+          <div className='flex gap-2 flex-wrap'>
             {skills.map((skill, index) =>
               <div key={index} className='text-[color:var(--text-title)] px-2 py-1 bg-[color:var(--bg-container)] border border-[color:var(--bg-stroke)] w-fit rounded-lg text-sm'>{skill}</div>
             )}

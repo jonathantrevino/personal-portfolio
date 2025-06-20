@@ -7,7 +7,7 @@ import Certifications from "./sections/certifications";
 
 export default function Home() {
   return (
-    <div className="col-span-8">
+    <div className="col-span-11">
       <Hero />
       <div className='pt-[150px]'></div>
       <Project />

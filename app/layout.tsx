@@ -79,10 +79,10 @@ export default function RootLayout({
         <link rel="manifest" href="/site.webmanifest" />
       </head>
       <body
-        className={`antialiased max-w-[1060px] mx-auto grid grid-cols-12 gap-[20px] py-[120px] relative`}
+        className={`antialiased w-full lg:max-w-[1060px] mx-auto grid lg:grid-cols-12 gap-[20px] py-[120px] relative px-[20px]`}
       >
         <SideNav />
-        <main className='col-span-10'>
+        <main className='col-span-11'>
           {children}
           <Footer />
         </main>
